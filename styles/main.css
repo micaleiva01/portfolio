@@ -33,9 +33,12 @@ body {
 }
 
 .btn {
-    background-color: #000; 
-    border-radius: 0 !important; 
-    color: white;
+    background-color: black; 
+    color: #fff; 
+    letter-spacing: 1px; 
+    user-select: none; 
+    text-decoration: none;
+    border-radius: 0; 
 }
 
 .description {
@@ -50,4 +53,21 @@ body {
 .project:hover {
     transform: scale(1.05);
     transition: 0.2s;
+}
+
+.navbar {
+    color: #000;
+}
+
+footer {
+    display:block;
+    color: #fff; 
+    background-color: #000; 
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0;
+}
+
+.card {
+    border-radius: 5px;
 }

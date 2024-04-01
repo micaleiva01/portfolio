@@ -12,11 +12,9 @@
     <link rel="stylesheet" href="styles/main.css">
     <link href="styles/main.css" rel="stylesheet">
 </head>
-<body class="container">
+<body class="bg-light">
 
-  <!-- 
-
-    <nav class="navbar fixed-top navbar-expand-sm nav-colored nav-transparent px-5" style="color: #fff;">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light px-5" style="color: #fff;">
         <a class="nav-link text-dark" href="index.html">PORTFOLIO</a>
 
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" 
@@ -29,36 +27,38 @@
 
             <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
+                    <a class="nav-link" href="">Home</a>
                     </li>
 
                     <div class="vr mx-2"></div>
 
                     <li class="nav-item">
-                    <a class="nav-link" href="destinos.html">Destinos</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                     </li>
 
                     <div class="vr mx-2"></div>
 
                     <li class="nav-item">
-                    <a class="nav-link" href="#footer">Contacto</a>
+                    <a class="nav-link" href="#experience">Experience</a>
                     </li>
-                   <li class="nav-item dropdown active">
-                    <a href="#" class="nav-link dropdown-toggle"
-                    id="navigationDropdown" role="button" data-bs-toggle="dropdown"
-                    >Blog</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a href="#" class="dropdown-item">Item #1</a></li>
-                        <li><a href="#" class="dropdown-item">Item #2</a></li>
-                        <li><a href="#" class="dropdown-item">Item #3</a></li>
+
+                    <div class="vr mx-2"></div>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#references">References</a>
+                    </li>
+  
+                    <div class="vr mx-2"></div>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
                     </li>
             </ul>
         </div>
     </nav>
-  -->
 
 
-    <div class="container mt-5">
+    <div class="container pt-3 mt-5">
         <div class="row">
           <div class="imgWrapper col-lg-6">
             <img src="img/headshot.jpg" alt="headshot" style="width: 100%;">
@@ -68,24 +68,21 @@
                 <span class="px-1" style="background:#000; width: 70px; height: 5px;">MICAELA LEIVA</span>
               </span>
               <h2 class="py-2" style="font-size: 40px; font-weight: 700;">Portfolio</h2>
-              <p class="pb-2" style="font-size: 16px; line-height: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente soluta quam nemo perferendis esse voluptatem. Accusamus laborum nobis, commodi illo cum ab expedita ipsa! Vel sed nemo doloremque enim harum?</p>
-              <a href="#" class="px-3 py-2" style="text-transform: uppercase; 
-              background-color: black; color: #fff; 
-              letter-spacing: 1px; user-select: none; text-decoration: none;">Read More</a>
+              <p id="seen" class="pb-2" style="font-size: 16px; line-height: 25px;">Welcome to a showcase of my creative journey! In here, you'll find...</p>
+              <p id="hidden" class="pb-2" style="font-size: 16px; line-height: 25px;">Welcome to a showcase of my creative journey! In here, you'll find some of my favorite pieces of my work, created with tons of hard work, dedication, and a lot of (everyone's favorite ingredient) love. Whether we're talking about web design, development, or graphic design, this portfolio reflects not just my skills but the heart and soul poured into every project. So, take a moment to explore and witness the world through my creative lens. Your journey into my portfolio begins now. . .</p>
+              <button id="readmore" class="readmore btn btn-outline-dark p-2 px-3" style="text-transform: uppercase;">Read More</button>
+              <button id="readless" class="readmore btn btn-outline-dark p-2 px-3" style="text-transform: uppercase;">Read Less</button>
           </div>
         </div>
     </div>
 
+    <br id="skills">
     <br>
-
-    <br>
-
-    <hr>
+    <hr class="mx-5">
 
 
-    <div class="container mt-5 mx-5">
+    <div class="container mt-5 align-items-center">
         <div class="row">
-          <!-- First Portfolio Item -->
           <div class="col-md-6 col-lg-6">
             <div class="portfolio-item">
               <h1 style="font-weight: 700;">Here are some of my skills</h1>
@@ -137,15 +134,16 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-6">
-            <div class="portfolio-item me-5">
+            <div class="portfolio-item">
               <img src="img/workspace.jpg" class="img-fluid" alt="headshot">
             </div>
           </div>
         </div>
       </div>
 
+      <br id="experience">
       <br>
-      <hr>
+      <hr class="mx-5">
       <br>
 
       <div class="container d-flex justify-content-center align-items-center">
@@ -157,9 +155,9 @@
               <div class="col-md-8">
                   <div class="project position-relative">
                       <img src="img/porelmundo.jpg" class="thumbnail img-fluid" alt="por el mundo"></a>
-                      <a href="#"><button class="btn btn-dark position-absolute top-50 start-50 translate-middle">POR EL MUNDO</button></a>
+                      <a href="https://micaleiva01.github.io/por-el-mundo/"><button class="btn btn-dark position-absolute top-50 start-50 translate-middle">POR EL MUNDO</button></a>
                   </div>
-                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur alias sed vitae quas quo est ullam! Deleniti repellendus, unde accusamus et dignissimos fugiat ea ad, reprehenderit quasi recusandae culpa a.</p>
+                <p class="description">This project was born after I wanted to document my travels so that it doesn’t just work as an archive full of memories for me but for the rest of the world. As of now, placeholder text has been used, but stay tuned for the articles about my different travels! Programs: HMTL, CSS, JavaScript, Bootstrap, PHP.</p>
               </div>
             </div>
 
@@ -169,7 +167,7 @@
                   <img src="img/coldplay.jpeg" class="thumbnail img-fluid" alt="coldplay"></a>
                   <a href="https://micaleiva01.github.io/music-sampler/"><button class="btn btn-dark position-absolute top-50 start-50 translate-middle">COLDPLAY</button></a>
                 </div>
-                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur alias sed vitae quas quo est ullam! Deleniti repellendus, unde accusamus et dignissimos fugiat ea ad, reprehenderit quasi recusandae culpa a.</p>
+                <p class="description">What started as a mandatory class assignment, became one of my favorite projects I have worked on. As a hardcore music fan, this project was extremely fun to work on as I could mix two of the things I’m the most passionate about! Programs: HMTL, CSS, JavaScript, Bootstrap.</p>
               </div>
             </div>
 
@@ -179,34 +177,33 @@
                   <img src="img/mapabsas.jpeg" class="thumbnail img-fluid" alt="mapa buenos aires"></a>
                   <a href="https://micaleiva01.github.io/leaflet-and-maps/"><button class="btn btn-dark position-absolute top-50 start-50 translate-middle">LEAFLET & MAPS</button></a>
                 </div>
-                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur alias sed vitae quas quo est ullam! Deleniti repellendus, unde accusamus et dignissimos fugiat ea ad, reprehenderit quasi recusandae culpa a.</p>
+                <p class="description">This project was a fun way to experiment with a simple HTML feature that makes the website more interactive for the user. It was an interesting experience to play around with the different features of the map as well as learn how to achieve the desired result. Programs: HMTL, CSS, JavaScript, Bootstrap.
+                </p>
               </div>
              </div>
         </div>
     </div>
     
 
-      <br>
+    <br id="references">
+    <br>
+    <hr class="mx-5">
+    <br>
 
-      <br>
-  
-      <hr>
+      <div class="container mx-5">
+      <h2 class="pb-4 ps-">References</h2>
+      
 
-      <div>
-        <h2 class="pt-3 pb-4 ps-3">References</h2>
-      </div>
-
-
-      <div class="container">
+      <div class="container align-items-center">
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="card">
               <div class="card-body d-flex flex-column align-items-center">
                   <h5 class="card-title pt-2">Melinda McAdams</h5>
                   <div class="col-md-9">
-                    <img src="img/mcadams.jpg" class="img-fluid p-2 min-vh-50 d-flex align-items-center" style="max-width: auto;">
+                    <img src="img/mcadams.jpg" class="reference img-fluid p-2 min-vh-50 d-flex align-items-center" style="max-width: auto;">
                   </div>
-                  <button class="btn btn-outline-dark p-2">Leer Más</button>
+                  <button class="btn btn-outline-dark p-2" style="border-radius: 4px;">Leer Más</button>
                 </div>
             </div>
           </div>
@@ -215,9 +212,9 @@
               <div class="card-body d-flex flex-column align-items-center">
                 <h5 class="card-title pt-2">Emily Ramsey</h5>
                 <div class="col-md-9">
-                  <img src="img/ramsey.jpg" class="img-fluid p-2 min-vh-50 d-flex" alt="headshot">
+                  <img src="img/ramsey.jpg" class="reference img-fluid p-2 min-vh-50 d-flex align-items-center" alt="headshot">
                 </div>
-                <button class="btn btn-outline-dark p-2">Leer Más</button>
+                <button class="btn btn-outline-dark p-2" style="border-radius: 4px;">Leer Más</button>
               </div>
             </div>
           </div>
@@ -226,14 +223,86 @@
               <div class="card-body d-flex flex-column align-items-center">
                 <h5 class="card-title pt-2">Efren Vasques</h5>
                 <div class="col-md-9">
-                  <img src="img/vasques.png" class="img-fluid p-2 min-vh-50 d-flex" alt="headshot">
+                  <img src="img/vasques.png" class="reference img-fluid p-2 min-vh-50 d-flex align-items-center" alt="headshot">
                 </div>
-                <button class="btn btn-outline-dark p-2">Leer Más</button>
+                <button class="btn btn-outline-dark p-2" style="border-radius: 4px;">Leer Más</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+    </div>
+
+      <div id="contact" class="m-5">
+
+        <br>
+        <hr class="line mx-5"/>
+  
+      <section class="mb-4">
+  
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Form</h2>
+  
+            <p class="text-center w-responsive mx-auto mb-5">Let's stay in touch! For inquiries, please fill out the form below: </p>
+  
+            <div class="row">
+  
+        <div class="align-items-center mb-md-0 mb-5">
+            <form id="formulario" name="formulario" action="contacto.php" method="POST">
+  
+                <div class="row">
+  
+                    <div class="col-md-6">
+                        <div class="md-form mb-2">
+                          <label for="name" class="">Name</label>
+                          <input type="text" id="nombre" name="nombre" class="form-control">
+                        </div>
+                    </div>
+  
+                    <div class="col-md-6">
+                        <div class="md-form mb-2">
+                          <label for="email" class="">Email</label>
+                          <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
+  
+                </div>
+  
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-2">
+                          <label for="subject" class="">Subject</label>
+                          <input type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="row">
+  
+                    <div class="col-md-12">
+  
+                        <div class="md-form mb-2">
+                          <label for="message">Message</label>
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        </div>
+  
+                    </div>
+                </div>
+  
+            </form>
+  
+            <div class="text-center text-md-left">
+                <a class="btn m-3" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+          </div> 
+      </div>
+    </div>
+
+      <footer class="footer">
+        <h6 class="text-center p-3">Página web creada por Micaela Leiva. Se reservan todos los derechos de autor. <br>
+        <a href="#">Click aqui</a> para ver repositorio de GitHub.</h6>    
+      </footer>
 
       <script src="scripts/main.js"></script>
       <script src="http://code.jquery.com/jquery-latest.min.js"></script> <script src="js/bootstrap.min.js"></script> 
