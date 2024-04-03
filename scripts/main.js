@@ -17,3 +17,13 @@ readLess.onclick = () => {
     hidden.style.display = readLess.style.display = "none";
     readMore.style.display = seen.style.display = "block";
 };
+
+
+
+const card = document.getElementById("card");
+
+card.addEventListener("click",flipCard);
+
+function flipCard() {
+    card.classList.toggle("flipCard");
+}
