@@ -68,8 +68,8 @@
                 <span class="px-1" style="background:#000; width: 70px; height: 5px;">MICAELA LEIVA</span>
               </span>
               <h2 class="py-2" style="font-size: 40px; font-weight: 700;">Portfolio</h2>
-              <p id="seen" class="pb-2" style="font-size: 16px; line-height: 25px;">Welcome to a showcase of my creative journey! In here, you'll find...</p>
-              <p id="hidden" class="pb-2" style="font-size: 16px; line-height: 25px;">Welcome to a showcase of my creative journey! In here, you'll find some of my favorite pieces of my work, created with tons of hard work, dedication, and a lot of (everyone's favorite ingredient) love. Whether we're talking about web design, development, or graphic design, this portfolio reflects not just my skills but the heart and soul poured into every project. So, take a moment to explore and witness the world through my creative lens. Your journey into my portfolio begins now. . .</p>
+              <p id="seen" class="pb-2" style="font-size: 16px; line-height: 25px;">Welcome to a showcase of my creative journey! In here, you'll find&nbsp;...</p>
+              <p id="hidden" class="pb-2" style="font-size: 16px; line-height: 25px;">Welcome to a showcase of my creative journey! In here, you'll find some of my favorite pieces of my work, created with tons of hard work, dedication, and a lot of (everyone's favorite ingredient) love. Whether we're talking about web design, development, or graphic design, this portfolio reflects not just my skills but the heart and soul poured into every project. So, take a moment to explore and witness the world through my creative lens. Your journey into my portfolio begins now&nbsp;. . .</p>
               <button id="readmore" class="readmore btn btn-outline-dark p-2 px-3" style="text-transform: uppercase;">Read More</button>
               <button id="readless" class="readmore btn btn-outline-dark p-2 px-3" style="text-transform: uppercase;">Read Less</button>
           </div>
@@ -203,7 +203,8 @@
 
     <div class="container justify-content-center align-items-center">
 
-      <h1 class="mb-3 justify-content-center align-items-center" style="font-weight: 700;">References</h1>
+      <h1 class="mb-3 text-center" style="font-weight: 700;">References</h1>
+      <br>
 
       <div class="reference container d-flex justify-content-center align-items-center">
         <div class="row gx-5">
@@ -349,35 +350,39 @@
 
     -->
 
-      <div id="contact" class="m-5">
+    <div id="contact" class="m-5">
 
         <br>
-        <hr class="line mx-5"/>
+        <hr class="line m-5"/>
   
       <section class="mb-4">
   
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Form</h2>
+       <div class="row">
   
-            <p class="text-center w-responsive mx-auto mb-5">Let's stay in touch! For inquiries, please fill out the form below: </p>
+        <div class="contact-form d-flex">
+            <form id="formulario" name="formulario" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="ae753e20-adb5-4deb-9294-f7832ce6cbaa">
+
+              <h2 class="h1-responsive font-weight-bold my-4" style="font-weight: 700;">Contact Form</h2>
   
-            <div class="row">
+              <p class="w-responsive mx-auto mb-5">Let's stay in touch! For inquiries, please fill out the form below: </p>
   
-        <div class="align-items-center mb-md-0 mb-5">
-            <form id="formulario" name="formulario" action="contacto.php" method="POST">
-  
+
                 <div class="row">
   
                     <div class="col-md-6">
                         <div class="md-form mb-2">
-                          <label for="name" class="">Name</label>
-                          <input type="text" id="nombre" name="nombre" class="form-control">
+                          <input type="text" id="nombre" name="nombre" placeholder="Your Name" class="contact-inputs" required>
                         </div>
                     </div>
+
+                  </div>
+
+                  <div class="row">
   
                     <div class="col-md-6">
                         <div class="md-form mb-2">
-                          <label for="email" class="">Email</label>
-                          <input type="text" id="email" name="email" class="form-control">
+                          <input type="text" id="email" name="email" placeholder="Your Email" class="contact-inputs" required>
                         </div>
                     </div>
   
@@ -386,8 +391,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-2">
-                          <label for="subject" class="">Subject</label>
-                          <input type="text" id="subject" name="subject" class="form-control">
+                          <input type="text" id="subject" name="subject" placeholder="Subject" class="contact-inputs" required>
                         </div>
                     </div>
                 </div>
@@ -397,28 +401,26 @@
                     <div class="col-md-12">
   
                         <div class="md-form mb-2">
-                          <label for="message">Message</label>
-                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <textarea type="text" id="message" name="message" placeholder="Write your message here" rows="2" class="contact-inputs md-textarea" required></textarea>
                         </div>
   
                     </div>
                 </div>
+
+                <button type="submit">Submit</button>
   
             </form>
-  
-            <div class="text-center text-md-left">
-                <a class="btn m-3" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
+
           </div> 
-      </div>
+        </section>
     </div>
 
       <footer class="footer">
         <h6 class="text-center p-3">Página web creada por Micaela Leiva. Se reservan todos los derechos de autor. <br>
-        <a href="#">Click aqui</a> para ver repositorio de GitHub.</h6>    
+        <a href="https://github.com/micaleiva01/portfolio">Click aqui</a> para ver repositorio de GitHub.</h6>    
       </footer>
 
       <script src="scripts/main.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
